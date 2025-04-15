@@ -21,9 +21,18 @@ USE_GPT = True
 
 if USE_GPT:
     from openai import OpenAI
+    from dotenv import load_dotenv
+    import os
+    load_dotenv()
     
-    # Initialize the client with your API key
-    client = OpenAI(api_key="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")
+    api_key = os.getenv("OPENAI_API_KEY")
+    
+    if not api_key:
+        print("Warning: OPENAI_API_KEY not found in .env file!")
+        USE_GPT = False
+    else:
+        # Initialize the client with your API key from the environment variable
+        client = OpenAI(api_key=api_key)
 
 
 def chat(messages):
