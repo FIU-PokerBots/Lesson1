@@ -1,0 +1,432 @@
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: 2h, Ad. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 2h, Ad. Community: Jd, 6d, 5s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 2h, Ad. Community: Jd, 6d, 5s, 2c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+Prompt sent to AI: Cards: 2h, Ad. Community: Jd, 6d, 5s, 2c, 9s. Your stack: 394. Your contribution: 6. Legal actions: Check, Raise (min: 2, max: 394). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Your opponent revealed 6s, 3c
+This round, your bankroll changed by -6!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: Jc, 9h. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Jc, 9h. Community: Ac, 7d, 8d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: Jc, 9h. Community: Ac, 7d, 8d, 2h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Jc, 9h. Community: Ac, 7d, 8d, 2h, Qs. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed 3c, Td
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: Qs, Kc. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Qs, Kc. Community: 2d, Ah, Kd. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: 7d, As. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 7d, As. Community: 2d, 5h, 6c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 7d, As. Community: 2d, 5h, 6c, Th. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 7d, As. Community: 2d, 5h, 6c, Th, 3c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed Js, 6h
+This round, your bankroll changed by -4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: Kc, 9c. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Kc, 9c. Community: 9d, 4h, 7h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Kc, 9c. Community: 9d, 4h, 7h, 2h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: Ks, Qd. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Ks, Qd. Community: Qs, Js, 9h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: Js, Jc. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Js, Jc. No community cards. Your stack: 396. Your contribution: 4. To call: 327. Legal actions: Call, Fold, Raise (min: 400, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 400
+
+Prompt sent to AI: Cards: Js, Jc. Community: 5d, Qh, Kh. Your stack: 0. Your contribution: 400. Legal actions: Check. RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Js, Jc. Community: 5d, Qh, Kh, 6h. Your stack: 0. Your contribution: 400. Legal actions: Check. RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Js, Jc. Community: 5d, Qh, Kh, 6h, Kd. Your stack: 0. Your contribution: 400. Legal actions: Check. RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Your opponent revealed Jd, Jh
+This round, your bankroll changed by 0!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: Kc, 4d. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Kc, 4d. Community: Ks, Js, Jd. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Kc, 4d. Community: Ks, Js, Jd, 6d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Kc, 4d. Community: Ks, Js, Jd, 6d, 6h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: As, 6h. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: As, 6h. Community: 8c, 5h, 3s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: As, 6h. Community: 8c, 5h, 3s, 7h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: Kc, 3h. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Kc, 3h. Community: Js, Jc, Td. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: Kc, 3h. Community: Js, Jc, Td, Ah. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: Kc, 3h. Community: Js, Jc, Td, Ah, 5c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed 2c, Ad
+This round, your bankroll changed by -4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: Kh, Ks. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Kh, Ks. Community: As, 9d, Th. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Kh, Ks. Community: As, 9d, Th, 6h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Kh, Ks. Community: As, 9d, Th, 6h, 6d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+Your opponent revealed 9s, 3s
+This round, your bankroll changed by 6!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: 4h, 7d. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 4h, 7d. Community: 9s, Ts, 5d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 4h, 7d. Community: 9s, Ts, 5d, 9h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 4h, 7d. Community: 9s, Ts, 5d, 9h, 2s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed Ah, 9c
+This round, your bankroll changed by -4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: 9c, Ks. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 9c, Ks. Community: 7c, 9d, 2c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 9c, Ks. Community: 7c, 9d, 2c, Ac. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+This round, your bankroll changed by 4!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: 9s, 7h. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 9s, 7h. Community: Ts, 2c, Tc. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 9s, 7h. Community: Ts, 2c, Tc, 7c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 9s, 7h. Community: Ts, 2c, Tc, 7c, 2d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+Your opponent revealed 8c, 3c
+This round, your bankroll changed by -6!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: Qd, Qc. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Qd, Qc. Community: 2d, 5h, 6s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Qd, Qc. Community: 2d, 5h, 6s, 2s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+Prompt sent to AI: Cards: Qd, Qc. Community: 2d, 5h, 6s, 2s, 5s. Your stack: 394. Your contribution: 6. To call: 325. Legal actions: Call, Fold, Raise (min: 394, max: 394). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 394
+
+Your opponent revealed Kh, 5c
+This round, your bankroll changed by -400!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: 9d, 2s. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 9d, 2s. Community: Js, Tc, 4d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 9d, 2s. Community: Js, Tc, 4d, 8h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 9d, 2s. Community: Js, Tc, 4d, 8h, 6s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed Ad, Kd
+This round, your bankroll changed by -4!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: 6c, 8d. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 6c, 8d. Community: 7s, 2d, Js. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 6c, 8d. Community: 7s, 2d, Js, 9h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+Prompt sent to AI: Cards: 6c, 8d. Community: 7s, 2d, Js, 9h, Kh. Your stack: 394. Your contribution: 6. Legal actions: Check, Raise (min: 2, max: 394). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed 9c, Td
+This round, your bankroll changed by -6!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: 3c, 9c. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 3c, 9c. Community: 8c, 5s, 5c. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 3c, 9c. Community: 8c, 5s, 5c, 6s. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 2
+
+Prompt sent to AI: Cards: 3c, 9c. Community: 8c, 5s, 5c, 6s, 8d. Your stack: 394. Your contribution: 6. Legal actions: Check, Raise (min: 2, max: 394). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Prompt sent to AI: Cards: 3c, 9c. Community: 8c, 5s, 5c, 6s, 8d. Your stack: 394. Your contribution: 6. To call: 325. Legal actions: Call, Fold, Raise (min: 394, max: 394). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 394
+
+Your opponent revealed 5h, 2h
+This round, your bankroll changed by -400!
+
+================================NEW ROUND===================================
+You are small blind!
+
+Prompt sent to AI: Cards: 8c, Jh. No community cards. Your stack: 399. Your contribution: 1. To call: 1. Legal actions: Call, Fold, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: 8c, Jh. Community: Ac, 5h, Kc. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 8c, Jh. Community: Ac, 5h, Kc, 4d. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: 8c, Jh. Community: Ac, 5h, Kc, 4d, Th. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed Kh, Qd
+This round, your bankroll changed by -4!
+
+================================NEW ROUND===================================
+You are big blind!
+
+Prompt sent to AI: Cards: Tc, Kh. No community cards. Your stack: 398. Your contribution: 2. Legal actions: Check, Raise (min: 4, max: 400). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Raise 4
+
+Prompt sent to AI: Cards: Tc, Kh. Community: 5s, 5c, Qs. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Tc, Kh. Community: 5s, 5c, Qs, Ah. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Check
+
+Prompt sent to AI: Cards: Tc, Kh. Community: 5s, 5c, Qs, Ah, 8h. Your stack: 396. Your contribution: 4. Legal actions: Check, Raise (min: 2, max: 396). RESPOND ONLY WITH: Call, Check, Fold, or Raise X (where X is a number).
+
+GPT Response: Fold
+Response not recognized or not legal, defaulting to Call/Check
+
+Your opponent revealed 8d, Qc
+This round, your bankroll changed by -4!
+
