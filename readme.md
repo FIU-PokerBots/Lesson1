@@ -44,7 +44,13 @@ And here's our second bot - the AI-powered OpenAI bot! This one's super cool bec
 
 It's like having a poker coach in your pocket, but one that's powered by cutting-edge AI! 
 
-(This could easily be updated to use other LLM API's as well!)
+## OpenAI Bot (Free) 💰
+
+Free version of the OpenAI Bot using Groq Cloud
+1. Sign up and generate an API key at: https://console.groq.com/home
+2. Add `GROQ_API_KEY=your-key` to your .env
+3. Choose the model you want to use under Dashboard -> Limits (llama3-70b-8192 set by default)
+4. Prompt engineer yourself to victory 🏆
 
 ## Getting Started 🚀
 
