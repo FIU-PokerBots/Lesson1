@@ -36,69 +36,72 @@ class Player(Bot):
         '''
         pass
 
+    def calculate_hand_ev(self, game_state, round_state, active):
+        '''
+        Calculate true EV based on:
+        1. Probability of winning the hand
+        2. Pot size
+        3. Cost of action
+        '''
+        # Get current pot size and cost to call
+        pot_size = sum(round_state.pips)
+        cost_to_call = round_state.pips[1-active] - round_state.pips[active]
+        
+        # Calculate win probability using existing hand strength evaluation
+        win_probability = self.calculate_win_probability(round_state.hands[active], round_state.deck[:round_state.street])
+        
+        # Calculate true EV
+        # EV = (Probability of winning * Pot size) - (Cost of action)
+        ev = (win_probability * pot_size) - cost_to_call
+        
+        return ev
+
+    def calculate_win_probability(self, hole_cards, board_cards):
+        '''
+        Calculate probability of winning using existing hand strength evaluation
+        '''
+        if not board_cards:  # Preflop
+            return self.preflop_hand_strength(hole_cards)
+        
+        # For post-flop, use existing hand strength evaluation but normalize to probability
+        hand_strength = self.evaluate_hand_strength(hole_cards + board_cards)
+        return hand_strength / 8.0  # Convert to probability
+
     def get_action(self, game_state, round_state, active):
         '''
         Where the magic happens - evaluate hand strength and make decisions.
         '''
         legal_actions = round_state.legal_actions()
-        street = round_state.street  # 0=preflop, 3=flop, 4=turn, 5=river
-        my_cards = round_state.hands[active]  # hole cards
-        board_cards = round_state.deck[:street]  # community cards visible so far
+        ev = self.calculate_hand_ev(game_state, round_state, active)
         
-        # Get betting information
-        my_pip = round_state.pips[active]  # chips contributed this round
-        opp_pip = round_state.pips[1-active]  # opponent's chips contributed
-        my_stack = round_state.stacks[active]  # remaining chips
-        opp_stack = round_state.stacks[1-active]  # opponent's remaining chips
-        continue_cost = opp_pip - my_pip  # chips needed to call
+        # Get pot odds
+        pot_size = sum(round_state.pips)
+        cost_to_call = round_state.pips[1-active] - round_state.pips[active]
+        pot_odds = cost_to_call / (pot_size + cost_to_call) if cost_to_call > 0 else 0
         
-        # Calculate EV (hand strength)
-        hand_ev = self.calculate_hand_ev(my_cards, board_cards)
-        
-        # Determine action based on hand EV
-        if hand_ev > 0.7:  # Strong hand
+        # Decision making based on EV and pot odds
+        if ev > 0:  # Positive EV
             if RaiseAction in legal_actions:
                 min_raise, max_raise = round_state.raise_bounds()
-                # Raise amount based on hand strength - higher EV means bigger raise
-                raise_percent = min(0.3 + hand_ev * 0.7, 1.0)  # Scale from 30% to 100% of max
-                raise_amount = int(min_raise + (max_raise - min_raise) * raise_percent)
-                raise_amount = max(min_raise, min(max_raise, raise_amount))
+                # Raise proportionally to EV
+                raise_amount = int(min_raise + (max_raise - min_raise) * min(ev/pot_size, 1.0))
                 return RaiseAction(raise_amount)
             elif CallAction in legal_actions:
                 return CallAction()
             else:
                 return CheckAction()
-        
-        elif hand_ev >= 0.3:  # Medium hand
+        elif ev > -cost_to_call:  # Negative EV but better than folding
             if CheckAction in legal_actions:
                 return CheckAction()
             elif CallAction in legal_actions:
                 return CallAction()
             else:
                 return FoldAction()
-        
-        else:  # Weak hand
+        else:  # Negative EV worse than folding
             if CheckAction in legal_actions:
                 return CheckAction()
             else:
                 return FoldAction()
-
-    def calculate_hand_ev(self, hole_cards, board_cards):
-        '''
-        Calculate a simple EV (hand strength) between 0 and 1.
-        For simplicity, this is a basic heuristic-based calculation.
-        '''
-        # If preflop, use a simple rank-based heuristic
-        if not board_cards:
-            return self.preflop_hand_strength(hole_cards)
-        
-        # Calculate based on the current best 5-card hand
-        all_cards = hole_cards + board_cards
-        hand_strength = self.evaluate_hand_strength(all_cards)
-        
-        # Normalize to a value between 0 and 1
-        # Hand ranking from high card (0) to straight flush (8)
-        return hand_strength / 8.0
 
     def preflop_hand_strength(self, hole_cards):
         '''
