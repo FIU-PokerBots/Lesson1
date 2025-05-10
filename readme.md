@@ -1,8 +1,12 @@
-# FIU PokerBots 2025 Lesson 1 - Introduction to Poker and PokerBots 🃏
+# FIU PokerBots 2025 🃏
+## Lesson 1 - Introduction to Poker and PokerBots 
+### Featuring Sam Ganzfried
 
-Hey there! Welcome to our exciting poker bot competition repository! This is where the magic happens - we've got some seriously smart bots playing Texas Hold'em against each other. Let me walk you through what we've got here!
+"Introduction to Computational Game Theory" Learn more about Sam's work and reserach at: https://www.ganzfriedresearch.com/
 
 ## Overview 🌟
+
+Hey there! Welcome to our exciting poker bot competition repository! This is where the magic happens - we've got some seriously smart bots playing Texas Hold'em against each other. Let me walk you through what we've got here!
 
 This repository is your one-stop shop for everything poker bot related! We've included:
 - A super useful test engine to generate some action
