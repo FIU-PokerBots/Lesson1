@@ -42,7 +42,8 @@ And here's our second bot - the AI-powered OpenAI bot! This one's super cool bec
 - Adapts its strategy based on the game context
 - Has a fallback strategy if the AI needs a moment to think
 
-It's like having a poker coach in your pocket, but one that's powered by cutting-edge AI! (This could easily be updated to use other LLM API's as well!)
+It's like having a poker coach in your pocket, but one that's powered by cutting-edge AI! 
+(This could easily be updated to use other LLM API's as well!)
 
 ## Getting Started 🚀
 
