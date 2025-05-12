@@ -5,9 +5,8 @@ PLAYER_1_PATH = './openaibot'
 # NO TRAILING SLASHES ARE ALLOWED IN PATHS
 PLAYER_2_NAME = 'B'
 PLAYER_2_PATH = './player1_ABC'
-# ./player2_monte_carlo
-# ./player3_strong
-# ./player4_weak
+# ./openaibot-free
+
 # GAME PROGRESS IS RECORDED HERE
 GAME_LOG_FILENAME = 'gamelog'
 # PLAYER_LOG_SIZE_LIMIT IS IN BYTES

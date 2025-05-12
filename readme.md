@@ -52,9 +52,15 @@ Free version of the OpenAI Bot using Groq Cloud
 3. Choose the model you want under Dashboard -> Limits (llama3-70b-8192 set by default)
 4. Prompt engineer yourself to victory 🏆
 
-## Getting Started 🚀
+## Getting Started Locally 🚀
 
-Want to see these bots in action? Just run the test engine and watch the magic happen! You can create your own bot by following the skeleton framework - who knows, maybe your bot will be the next poker champion! 
+Want to see these bots in action? Just run the test engine and watch the magic happen! 
+
+Set the paths to your desired bots in `config.py`  
+
+Then run `python test_engine.py` or `python3 test_engine.py` to get the game going 
+
+You can create your own bot by following the skeleton framework - who knows, maybe your bot will be the next poker champion! 
 
 Remember, in poker as in life, it's not just about the cards you're dealt, but how you play them! 
 
