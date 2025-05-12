@@ -1,7 +1,7 @@
 '''
 Simple example pokerbot, written in Python.
 '''
-from skeleton.actions import FoldAction, CallAction, CheckAction, RaiseAction, BidAction
+from skeleton.actions import FoldAction, CallAction, CheckAction, RaiseAction
 from skeleton.states import GameState, TerminalState, RoundState
 from skeleton.states import NUM_ROUNDS, STARTING_STACK, BIG_BLIND, SMALL_BLIND
 from skeleton.bot import Bot
@@ -20,6 +20,7 @@ class Player(Bot):
     '''
 
     def __init__(self):
+        print("Player PotOdds initialized")
         '''
         Called when a new game starts. Called exactly once.
 
@@ -43,6 +44,8 @@ class Player(Bot):
         Returns:
         Nothing.
         '''
+        print("") # print a new line
+
         my_bankroll = game_state.bankroll  # the total number of chips you've gained or lost from the beginning of the game to the start of this round
         game_clock = game_state.game_clock  # the total number of seconds your bot has left to play this game
         round_num = game_state.round_num  # the round number from 1 to NUM_ROUNDS
@@ -61,32 +64,37 @@ class Player(Bot):
         game_clock = game_state.game_clock
         num_rounds = game_state.round_num
 
-
         # start_time = time.time()
         # for i in range(10):
         #     deck = eval7.Deck()
         #     deck = list(deck)
-        # print("time taken to convert list to deck:", time.time() - start_time)
+        # print("time taken to conve
+        print(f"rank1: {rank1}, rank2: {rank2}")
 
         self.strong_hole = False
         if rank1 == rank2 or (rank1 in "AKQJT9876" and rank2 in "AKQJT9876"):
+            print("Strong hole reached")
             self.strong_hole = True
+
+        self.premium_hole = False
+        if (rank1 == rank2 and rank1 in "AKQJT9876") or (rank1 in "AKQJ" and rank2 in "AKQJ"):
+            print("Premium hole reached")
+            self.premium_hole = True
         
         monte_carlo_iters = 100
-        strength_w_auction, strength_wo_auction = self.calculate_strength(my_cards, monte_carlo_iters)
-        self.strength_w_auction = strength_w_auction
-        self.strength_wo_auction = strength_wo_auction
+        hand_strength = self.calculate_strength(my_cards, monte_carlo_iters)
+        self.hand_strength = hand_strength
 
         if num_rounds == NUM_ROUNDS:
             print("game clock:", game_clock)
+
 
     def calculate_strength(self, my_cards, iters):
         deck = eval7.Deck()
         my_cards = [eval7.Card(card) for card in my_cards]
         for card in my_cards:
             deck.cards.remove(card)
-        wins_w_auction = 0
-        wins_wo_auction = 0
+        wins = 0
 
         for i in range(iters):
             deck.shuffle()
@@ -104,44 +112,16 @@ class Player(Bot):
 
             if our_hand_val > opp_hand_val:
                 # We won the round
-                wins_wo_auction += 2
+                wins += 2
             if our_hand_val == opp_hand_val:
                 # We tied the round
-                wins_wo_auction += 1
+                wins += 1
             else:
                 # We lost the round
-                wins_wo_auction
-
-        for i in range(iters):
-            deck.shuffle()
-            opp = 2
-            community = 5
-            auction = 1
-            draw = deck.peek(opp+community+auction)
-            opp_cards = draw[:opp]
-            community_cards = draw[opp: opp + community]
-            auction_card = draw[opp+community:]
-            our_hand = my_cards + auction_card + community_cards
-            opp_hand = opp_cards + community_cards
-
-            our_hand_val = eval7.evaluate(our_hand)
-            opp_hand_val = eval7.evaluate(opp_hand)
-
-            if our_hand_val > opp_hand_val:
-                # We won the round
-                wins_w_auction += 2
-            elif our_hand_val == opp_hand_val:
-                # we tied the round
-                wins_w_auction += 1
-            else:
-                #We tied the round
-                wins_w_auction += 0
+                wins
             
-            strength_w_auction = wins_w_auction / (2* iters)
-            strength_wo_auction = wins_wo_auction/ (2* iters)
-
-        return strength_w_auction, strength_wo_auction
-
+        hand_strength = wins/ (2* iters)
+        return hand_strength
 
 
 
@@ -186,23 +166,17 @@ class Player(Bot):
         opp_pip = round_state.pips[1-active]  # the number of chips your opponent has contributed to the pot this round of betting
         my_stack = round_state.stacks[active]  # the number of chips you have remaining
         opp_stack = round_state.stacks[1-active]  # the number of chips your opponent has remaining
-        my_bid = round_state.bids[active]  # How much you bid previously (available only after auction)
-        opp_bid = round_state.bids[1-active]  # How much opponent bid previously (available only after auction)
         continue_cost = opp_pip - my_pip  # the number of chips needed to stay in the pot
         my_contribution = STARTING_STACK - my_stack  # the number of chips you have contributed to the pot
         opp_contribution = STARTING_STACK - opp_stack  # the number of chips your opponent has contributed to the pot
         pot = my_contribution + opp_contribution
 
-        strength_diff = self.strength_w_auction - self.strength_wo_auction
 
-        if BidAction in legal_actions:
-            max_bid_percentage = 0.40
-            min_bid_percentage = 0.15
-            bid_percentage = 0.75*strength_diff + 1/100*random.randint(-500,500)
-            bid_percentage = max(min_bid_percentage,bid_percentage)
-            bid_percentage = min(max_bid_percentage, bid_percentage)
-            bid = int(pot*bid_percentage)
-            return BidAction(bid)
+        # If opponent raises too big on the flop --> go all-in as an EXPLOIT
+        print(f"Street: {street}, Continue cost: {continue_cost}, Pot: {pot}, My stack: {my_stack}, Opp stack: {opp_stack}")
+        if street == 0 and self.premium_hole and continue_cost >= 15 * BIG_BLIND:
+            print(f"Going all-in preflop with a premium hand! Continue cost: {continue_cost}, Pot: {pot}")
+            return RaiseAction(my_stack)  # Go all-in
         
         if RaiseAction in legal_actions:
             min_raise, max_raise = round_state.raise_bounds()
@@ -211,15 +185,11 @@ class Player(Bot):
             return FoldAction()
         
         if street < 3:
-            strength = (self.strength_w_auction + self.strength_wo_auction)/2
+            strength = self.hand_strength
             raise_ammt = int(my_pip + continue_cost + 0.3*pot)
             raise_cost = int(continue_cost + 0.3*pot)
         else:
-            if len(my_cards) == 3:
-                strength = self.strength_w_auction
-            else:
-                strength = self.strength_wo_auction
-
+            strength = self.hand_strength
             raise_ammt = int(my_pip + continue_cost + 0.5*pot)
             raise_cost = int(continue_cost + 0.5*pot)
 
@@ -234,28 +204,24 @@ class Player(Bot):
             commit_action = CallAction()
         else:
             print("second fold")
-            commit_action = FoldAction()
+            if CheckAction in legal_actions:
+                my_action = CheckAction()
+            else:
+                commit_action = FoldAction()
 
         if continue_cost > 0:
             pot_odds = continue_cost/(continue_cost + pot)
             intimidation = 0
 
             if continue_cost/pot > 0.33:
-                intimidation = -0.3
+                intimidation = -0.3 * (continue_cost / pot)
             strength += intimidation
 
             if strength >= pot_odds:
-                if random.random() < strength and strength > 0.7:
-                    my_action = commit_action
-                else:
+                my_action = commit_action  # Commit to the pot if strength justifies it
+            else:
+                if strength > 0.4:  # Allow some bluff-catching with moderate strength
                     my_action = CallAction()
-            if strength < pot_odds:
-                if strength < 0.10 and random.random() < 0.05:
-                    if RaiseAction in legal_actions:
-                        my_action = commit_action
-                    else:
-                        my_action = FoldAction()
-
                 else:
                     my_action = FoldAction()
 

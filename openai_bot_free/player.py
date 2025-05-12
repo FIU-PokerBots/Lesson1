@@ -92,6 +92,7 @@ class Player(Bot):
     """
 
     def __init__(self):
+        print("Player OpenAIFree initialized")
         """
         Called when a new game starts. Called exactly once.
 

@@ -1,0 +1,116 @@
+Player PotOdds initialized
+
+rank1: 6, rank2: K
+Strong hole reached
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+Street: 0, Continue cost: 27, Pot: 35, My stack: 396, Opp stack: 369
+
+rank1: 2, rank2: Q
+Street: 0, Continue cost: 39, Pot: 43, My stack: 398, Opp stack: 359
+
+rank1: Q, rank2: 5
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: 2, rank2: Q
+Street: 0, Continue cost: 43, Pot: 47, My stack: 398, Opp stack: 355
+
+rank1: T, rank2: 8
+Strong hole reached
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: 8, rank2: 8
+Strong hole reached
+Premium hole reached
+Street: 0, Continue cost: 68, Pot: 72, My stack: 398, Opp stack: 330
+Going all-in preflop with a premium hand! Continue cost: 68, Pot: 72
+Street: 3, Continue cost: 0, Pot: 796, My stack: 2, Opp stack: 2
+second fold
+Street: 4, Continue cost: 0, Pot: 796, My stack: 2, Opp stack: 2
+second fold
+Street: 5, Continue cost: 0, Pot: 796, My stack: 2, Opp stack: 2
+second fold
+
+rank1: T, rank2: A
+Strong hole reached
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+Street: 0, Continue cost: 87, Pot: 95, My stack: 396, Opp stack: 309
+
+rank1: 8, rank2: 3
+Street: 0, Continue cost: 37, Pot: 41, My stack: 398, Opp stack: 361
+
+rank1: 4, rank2: 5
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: 7, rank2: 8
+Strong hole reached
+Street: 0, Continue cost: 92, Pot: 96, My stack: 398, Opp stack: 306
+
+rank1: K, rank2: 4
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: 6, rank2: 2
+Street: 0, Continue cost: 0, Pot: 4, My stack: 398, Opp stack: 398
+Street: 3, Continue cost: 0, Pot: 4, My stack: 398, Opp stack: 398
+Street: 4, Continue cost: 0, Pot: 4, My stack: 398, Opp stack: 398
+Street: 5, Continue cost: 0, Pot: 4, My stack: 398, Opp stack: 398
+
+rank1: 5, rank2: 5
+Strong hole reached
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+Street: 0, Continue cost: 97, Pot: 105, My stack: 396, Opp stack: 299
+
+rank1: 2, rank2: 6
+Street: 0, Continue cost: 77, Pot: 81, My stack: 398, Opp stack: 321
+
+rank1: Q, rank2: 5
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: 7, rank2: K
+Strong hole reached
+Street: 0, Continue cost: 101, Pot: 105, My stack: 398, Opp stack: 297
+
+rank1: 2, rank2: K
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: 5, rank2: 3
+Street: 0, Continue cost: 31, Pot: 35, My stack: 398, Opp stack: 367
+
+rank1: 7, rank2: 8
+Strong hole reached
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+Street: 0, Continue cost: 48, Pot: 56, My stack: 396, Opp stack: 348
+
+rank1: 6, rank2: 7
+Strong hole reached
+Street: 0, Continue cost: 92, Pot: 96, My stack: 398, Opp stack: 306
+
+rank1: 4, rank2: 8
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: T, rank2: 4
+Street: 0, Continue cost: 45, Pot: 49, My stack: 398, Opp stack: 353
+
+rank1: 4, rank2: 7
+Street: 0, Continue cost: 1, Pot: 3, My stack: 399, Opp stack: 398
+
+rank1: Q, rank2: Q
+Strong hole reached
+Premium hole reached
+Street: 0, Continue cost: 79, Pot: 83, My stack: 398, Opp stack: 319
+Going all-in preflop with a premium hand! Continue cost: 79, Pot: 83
+Street: 3, Continue cost: 0, Pot: 796, My stack: 2, Opp stack: 2
+second fold
+Street: 4, Continue cost: 0, Pot: 796, My stack: 2, Opp stack: 2
+second fold
+Traceback (most recent call last):
+  File "/Users/henriquepitta/Desktop/PokerBots/Lesson1/pot_odds_bot/player.py", line 238, in <module>
+    run_bot(Player(), parse_args())
+  File "/Users/henriquepitta/Desktop/PokerBots/Lesson1/pot_odds_bot/skeleton/runner.py", line 222, in run_bot
+    runner.run()
+  File "/Users/henriquepitta/Desktop/PokerBots/Lesson1/pot_odds_bot/skeleton/runner.py", line 198, in run
+    action = self.pokerbot.get_action(game_state, round_state, active)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquepitta/Desktop/PokerBots/Lesson1/pot_odds_bot/player.py", line 230, in get_action
+    my_action = commit_action
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'commit_action' where it is not associated with a value
