@@ -3,411 +3,193 @@ FIU Pokerbots - A vs B
 Round #1, A (0), B (0)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [2h Ad]
-B dealt [6s 3c]
-A raises to 4
-B calls
-Flop [Jd 6d 5s], A (4), B (4)
-B checks
-A checks
-Turn [Jd 6d 5s 2c], A (4), B (4)
-B checks
-A bets 2
-B calls
-River [Jd 6d 5s 2c 9s], A (6), B (6)
-B checks
-A checks
-A shows [2h Ad]
-B shows [6s 3c]
-A awarded -6
-B awarded 6
+A dealt [6d 4s]
+B dealt [Ad Ks]
+A folds
+A awarded -1
+B awarded 1
 
-Round #2, B (6), A (-6)
+Round #2, B (1), A (-1)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [3c Td]
-A dealt [Jc 9h]
-B calls
-A raises to 4
-B calls
-Flop [Ac 7d 8d], B (4), A (4)
-A checks
-B checks
-Turn [Ac 7d 8d 2h], B (4), A (4)
-A checks
-B checks
-River [Ac 7d 8d 2h Qs], B (4), A (4)
-A checks
-B checks
-B shows [3c Td]
-A shows [Jc 9h]
-B awarded -4
-A awarded 4
+B dealt [Td 5d]
+A dealt [6h 7c]
+B raises to 79
+A folds
+B awarded 2
+A awarded -2
 
-Round #3, A (-2), B (2)
+Round #3, A (-3), B (3)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [Qs Kc]
-B dealt [7d 3h]
-A raises to 4
-B calls
-Flop [2d Ah Kd], A (4), B (4)
-B checks
-A bets 2
-B folds
-A awarded 4
-B awarded -4
+A dealt [9c Jh]
+B dealt [Qd Td]
+A folds
+A awarded -1
+B awarded 1
 
-Round #4, B (-2), A (2)
+Round #4, B (4), A (-4)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [Js 6h]
-A dealt [7d As]
-B calls
-A raises to 4
-B calls
-Flop [2d 5h 6c], B (4), A (4)
-A checks
-B checks
-Turn [2d 5h 6c Th], B (4), A (4)
-A checks
-B checks
-River [2d 5h 6c Th 3c], B (4), A (4)
-A checks
-B checks
-B shows [Js 6h]
-A shows [7d As]
-B awarded 4
-A awarded -4
+B dealt [3c Qh]
+A dealt [2h 6h]
+B raises to 34
+A folds
+B awarded 2
+A awarded -2
 
-Round #5, A (-2), B (2)
+Round #5, A (-6), B (6)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [Kc 9c]
-B dealt [Ad 4d]
-A raises to 4
-B calls
-Flop [9d 4h 7h], A (4), B (4)
-B checks
-A checks
-Turn [9d 4h 7h 2h], A (4), B (4)
-B checks
-A bets 2
-B folds
-A awarded 4
-B awarded -4
+A dealt [Js 4c]
+B dealt [Qd 8d]
+A folds
+A awarded -1
+B awarded 1
 
-Round #6, B (-2), A (2)
+Round #6, B (7), A (-7)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [As 7s]
-A dealt [Ks Qd]
-B calls
-A raises to 4
-B calls
-Flop [Qs Js 9h], B (4), A (4)
-A bets 2
-B folds
-B awarded -4
-A awarded 4
+B dealt [Ac 6c]
+A dealt [8h 5c]
+B raises to 100
+A folds
+B awarded 2
+A awarded -2
 
-Round #7, A (6), B (-6)
+Round #7, A (-9), B (9)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [Js Jc]
-B dealt [Jd Jh]
-A raises to 4
-B raises to 331
-A raises to 400
-B calls
-Flop [5d Qh Kh], A (400), B (400)
-B checks
-A checks
-Turn [5d Qh Kh 6h], A (400), B (400)
-B checks
-A checks
-River [5d Qh Kh 6h Kd], A (400), B (400)
-B checks
-A checks
-A shows [Js Jc]
-B shows [Jd Jh]
-A awarded 0
-B awarded 0
+A dealt [Qh 3d]
+B dealt [3h 5s]
+A folds
+A awarded -1
+B awarded 1
 
-Round #8, B (-6), A (6)
+Round #8, B (10), A (-10)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [9h 8c]
-A dealt [Kc 4d]
-B calls
-A raises to 4
-B calls
-Flop [Ks Js Jd], B (4), A (4)
-A checks
-B checks
-Turn [Ks Js Jd 6d], B (4), A (4)
-A checks
-B checks
-River [Ks Js Jd 6d 6h], B (4), A (4)
-A bets 2
-B folds
-B awarded -4
-A awarded 4
+B dealt [Jc Ks]
+A dealt [4h Qd]
+B raises to 87
+A folds
+B awarded 2
+A awarded -2
 
-Round #9, A (10), B (-10)
+Round #9, A (-12), B (12)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [As 6h]
-B dealt [Ks Ac]
-A raises to 4
-B calls
-Flop [8c 5h 3s], A (4), B (4)
-B checks
-A checks
-Turn [8c 5h 3s 7h], A (4), B (4)
-B checks
-A bets 2
-B folds
-A awarded 4
-B awarded -4
+A dealt [2d 2c]
+B dealt [9s 2s]
+A folds
+A awarded -1
+B awarded 1
 
-Round #10, B (-14), A (14)
+Round #10, B (13), A (-13)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [2c Ad]
-A dealt [Kc 3h]
-B calls
-A raises to 4
-B calls
-Flop [Js Jc Td], B (4), A (4)
-A checks
-B checks
-Turn [Js Jc Td Ah], B (4), A (4)
-A checks
-B checks
-River [Js Jc Td Ah 5c], B (4), A (4)
-A checks
-B checks
-B shows [2c Ad]
-A shows [Kc 3h]
-B awarded 4
-A awarded -4
+B dealt [7d 5c]
+A dealt [Ts 8c]
+B raises to 28
+A folds
+B awarded 2
+A awarded -2
 
-Round #11, A (10), B (-10)
+Round #11, A (-15), B (15)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [Kh Ks]
-B dealt [9s 3s]
-A raises to 4
-B calls
-Flop [As 9d Th], A (4), B (4)
-B checks
-A checks
-Turn [As 9d Th 6h], A (4), B (4)
-B checks
-A checks
-River [As 9d Th 6h 6d], A (4), B (4)
-B checks
-A bets 2
-B calls
-A shows [Kh Ks]
-B shows [9s 3s]
-A awarded 6
-B awarded -6
+A dealt [4s 7s]
+B dealt [9s Kc]
+A folds
+A awarded -1
+B awarded 1
 
-Round #12, B (-16), A (16)
+Round #12, B (16), A (-16)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [Ah 9c]
-A dealt [4h 7d]
-B calls
-A raises to 4
-B calls
-Flop [9s Ts 5d], B (4), A (4)
-A checks
-B checks
-Turn [9s Ts 5d 9h], B (4), A (4)
-A checks
-B checks
-River [9s Ts 5d 9h 2s], B (4), A (4)
-A checks
-B checks
-B shows [Ah 9c]
-A shows [4h 7d]
-B awarded 4
-A awarded -4
+B dealt [9c 7c]
+A dealt [Kd Ks]
+B raises to 87
+A folds
+B awarded 2
+A awarded -2
 
-Round #13, A (12), B (-12)
+Round #13, A (-18), B (18)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [9c Ks]
-B dealt [8s Ah]
-A raises to 4
-B calls
-Flop [7c 9d 2c], A (4), B (4)
-B checks
-A checks
-Turn [7c 9d 2c Ac], A (4), B (4)
-B checks
-A bets 2
-B folds
-A awarded 4
-B awarded -4
+A dealt [7d Qd]
+B dealt [As Js]
+A folds
+A awarded -1
+B awarded 1
 
-Round #14, B (-16), A (16)
+Round #14, B (19), A (-19)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [8c 3c]
-A dealt [9s 7h]
-B calls
-A raises to 4
-B calls
-Flop [Ts 2c Tc], B (4), A (4)
-A checks
-B checks
-Turn [Ts 2c Tc 7c], B (4), A (4)
-A checks
-B checks
-River [Ts 2c Tc 7c 2d], B (4), A (4)
-A bets 2
-B calls
-B shows [8c 3c]
-A shows [9s 7h]
-B awarded 6
-A awarded -6
+B dealt [9c 7s]
+A dealt [Kc 5d]
+B raises to 47
+A folds
+B awarded 2
+A awarded -2
 
-Round #15, A (10), B (-10)
+Round #15, A (-21), B (21)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [Qd Qc]
-B dealt [Kh 5c]
-A raises to 4
-B calls
-Flop [2d 5h 6s], A (4), B (4)
-B checks
-A checks
-Turn [2d 5h 6s 2s], A (4), B (4)
-B checks
-A bets 2
-B calls
-River [2d 5h 6s 2s 5s], A (6), B (6)
-B bets 325
-A raises to 394
-B calls
-A shows [Qd Qc]
-B shows [Kh 5c]
-A awarded -400
-B awarded 400
+A dealt [Jc 2h]
+B dealt [As 7c]
+A folds
+A awarded -1
+B awarded 1
 
-Round #16, B (390), A (-390)
+Round #16, B (22), A (-22)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [Ad Kd]
-A dealt [9d 2s]
-B calls
-A raises to 4
-B calls
-Flop [Js Tc 4d], B (4), A (4)
-A checks
-B checks
-Turn [Js Tc 4d 8h], B (4), A (4)
-A checks
-B checks
-River [Js Tc 4d 8h 6s], B (4), A (4)
-A checks
-B checks
-B shows [Ad Kd]
-A shows [9d 2s]
-B awarded 4
-A awarded -4
+B dealt [8c 7d]
+A dealt [7c 2s]
+B raises to 44
+A folds
+B awarded 2
+A awarded -2
 
-Round #17, A (-394), B (394)
+Round #17, A (-24), B (24)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [6c 8d]
-B dealt [9c Td]
-A raises to 4
-B calls
-Flop [7s 2d Js], A (4), B (4)
-B checks
-A checks
-Turn [7s 2d Js 9h], A (4), B (4)
-B checks
-A bets 2
-B calls
-River [7s 2d Js 9h Kh], A (6), B (6)
-B checks
-A checks
-A shows [6c 8d]
-B shows [9c Td]
-A awarded -6
-B awarded 6
+A dealt [2d 3h]
+B dealt [8h 3d]
+A folds
+A awarded -1
+B awarded 1
 
-Round #18, B (400), A (-400)
+Round #18, B (25), A (-25)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [5h 2h]
-A dealt [3c 9c]
-B calls
-A raises to 4
-B calls
-Flop [8c 5s 5c], B (4), A (4)
-A checks
-B checks
-Turn [8c 5s 5c 6s], B (4), A (4)
-A bets 2
-B calls
-River [8c 5s 5c 6s 8d], B (6), A (6)
-A checks
-B bets 325
-A raises to 394
-B calls
-B shows [5h 2h]
-A shows [3c 9c]
-B awarded 400
-A awarded -400
+B dealt [4c 9h]
+A dealt [9d 3s]
+B raises to 29
+A folds
+B awarded 2
+A awarded -2
 
-Round #19, A (-800), B (800)
+Round #19, A (-27), B (27)
 A posts the blind of 1
 B posts the blind of 2
-A dealt [8c Jh]
-B dealt [Kh Qd]
-A raises to 4
-B calls
-Flop [Ac 5h Kc], A (4), B (4)
-B checks
-A checks
-Turn [Ac 5h Kc 4d], A (4), B (4)
-B checks
-A checks
-River [Ac 5h Kc 4d Th], A (4), B (4)
-B checks
-A checks
-A shows [8c Jh]
-B shows [Kh Qd]
-A awarded -4
-B awarded 4
+A dealt [Jc Kc]
+B dealt [5d 5h]
+A calls
+B raises to 182
+A folds
+A awarded -2
+B awarded 2
 
-Round #20, B (804), A (-804)
+Round #20, B (29), A (-29)
 B posts the blind of 1
 A posts the blind of 2
-B dealt [8d Qc]
-A dealt [Tc Kh]
-B calls
-A raises to 4
-B calls
-Flop [5s 5c Qs], B (4), A (4)
-A checks
-B checks
-Turn [5s 5c Qs Ah], B (4), A (4)
-A checks
-B checks
-River [5s 5c Qs Ah 8h], B (4), A (4)
-A checks
-B checks
-B shows [8d Qc]
-A shows [Tc Kh]
-B awarded 4
-A awarded -4
+B dealt [Ah 2c]
+A dealt [7c 8c]
+B raises to 36
+A folds
+B awarded 2
+A awarded -2
 
-Final, A (-808), B (808)
+Final, A (-31), B (31)

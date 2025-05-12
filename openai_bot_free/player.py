@@ -26,7 +26,7 @@ if USE_GPT:
     load_dotenv()
     
     api_key = os.getenv("GROQ_API_KEY")
-    base_url = "https://api.groq.com/openai" # Base url for OpenAI API compatible Groq endpoint
+    base_url = "https://api.groq.com/openai/v1" # Base url for OpenAI API compatible Groq endpoint
     groq_model = "llama3-70b-8192" # Change to any groq model you want to use
     
     if not api_key:

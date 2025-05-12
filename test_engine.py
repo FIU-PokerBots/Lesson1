@@ -305,6 +305,7 @@ class Game():
     def __init__(self):
         self.log = ['FIU Pokerbots - ' + PLAYER_1_NAME + ' vs ' + PLAYER_2_NAME]
         self.player_messages = [[], []]
+        self.hand_counter = 0
 
     def log_round_state(self, players, round_state):
         '''
@@ -385,6 +386,11 @@ class Game():
         for player, player_message, delta in zip(players, self.player_messages, round_state.deltas):
             player.query(round_state, player_message, self.log)
             player.bankroll += delta
+
+        # Print hands every X hands played
+        self.hand_counter += 1
+        if self.hand_counter % 1 == 0:
+            print(f"{self.hand_counter} hands have been played.")
 
     def run(self):
         '''
