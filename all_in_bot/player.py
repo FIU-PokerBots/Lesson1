@@ -20,7 +20,7 @@ class Player(Bot):
     '''
 
     def __init__(self):
-        print("Player PotOdds initialized")
+        print("Player AllIn initialized")
         '''
         Called when a new game starts. Called exactly once.
 
@@ -64,66 +64,14 @@ class Player(Bot):
         game_clock = game_state.game_clock
         num_rounds = game_state.round_num
 
-        # start_time = time.time()
-        # for i in range(10):
-        #     deck = eval7.Deck()
-        #     deck = list(deck)
-        # print("time taken to conve
         print(f"rank1: {rank1}, rank2: {rank2}")
-
-        self.strong_hole = False
-        if rank1 == rank2 or (rank1 in "AKQJT9876" and rank2 in "AKQJT9876"):
-            print("Strong hole reached")
-            self.strong_hole = True
-
-        self.premium_hole = False
-        if (rank1 == rank2 and rank1 in "AKQJT9876") or (rank1 in "AKQJ" and rank2 in "AKQJ"):
-            print("Premium hole reached")
-            self.premium_hole = True
-        
-        monte_carlo_iters = 100
-        hand_strength = self.calculate_strength(my_cards, monte_carlo_iters)
-        self.hand_strength = hand_strength
+        self.all_in_hole = False
+        if rank1 == rank2 or (rank1 in "A" or rank2 in "A"): # Get all-in range (Pairs + Ax)
+            print("All in hole reached")
+            self.all_in_hole = True
 
         if num_rounds == NUM_ROUNDS:
             print("game clock:", game_clock)
-
-
-    def calculate_strength(self, my_cards, iters):
-        deck = eval7.Deck()
-        my_cards = [eval7.Card(card) for card in my_cards]
-        for card in my_cards:
-            deck.cards.remove(card)
-        wins = 0
-
-        for i in range(iters):
-            deck.shuffle()
-            opp = 3
-            community = 5
-            draw = deck.peek(opp+community)
-            opp_cards = draw[:opp]
-            community_cards = draw[opp:]
-
-            our_hand = my_cards + community_cards
-            opp_hand = opp_cards + community_cards
-
-            our_hand_val = eval7.evaluate(our_hand)
-            opp_hand_val = eval7.evaluate(opp_hand)
-
-            if our_hand_val > opp_hand_val:
-                # We won the round
-                wins += 2
-            if our_hand_val == opp_hand_val:
-                # We tied the round
-                wins += 1
-            else:
-                # We lost the round
-                wins
-            
-        hand_strength = wins/ (2* iters)
-        return hand_strength
-
-
 
     def handle_round_over(self, game_state, terminal_state, active):
         '''
@@ -172,67 +120,17 @@ class Player(Bot):
         pot = my_contribution + opp_contribution
 
 
-        # If opponent raises too big on the flop --> go all-in as an EXPLOIT
-        print(f"Street: {street}, Continue cost: {continue_cost}, Pot: {pot}, My stack: {my_stack}, Opp stack: {opp_stack}")
-        if street == 0 and self.premium_hole and continue_cost >= 15 * BIG_BLIND:
-            print(f"Going all-in preflop with a premium hand! Continue cost: {continue_cost}, Pot: {pot}")
+        if self.all_in_hole:
+            print("Going all-in!")
             return RaiseAction(my_stack)  # Go all-in
         
-        if RaiseAction in legal_actions:
-            min_raise, max_raise = round_state.raise_bounds()
 
-        if not self.strong_hole:
-            return FoldAction()
+        if CheckAction in legal_actions:
+            return CheckAction()
+
+        return FoldAction()
         
-        if street < 3:
-            strength = self.hand_strength
-            raise_ammt = int(my_pip + continue_cost + 0.3*pot)
-            raise_cost = int(continue_cost + 0.3*pot)
-        else:
-            strength = self.hand_strength
-            raise_ammt = int(my_pip + continue_cost + 0.5*pot)
-            raise_cost = int(continue_cost + 0.5*pot)
-
-        if RaiseAction in legal_actions and raise_cost <= my_stack:
-
-            raise_ammt = max(min_raise,raise_ammt)
-            raise_ammt = min(max_raise, raise_ammt)
-
-            commit_action = RaiseAction(raise_ammt)
-
-        elif CallAction in legal_actions and continue_cost <= my_stack:
-            commit_action = CallAction()
-        else:
-            print("second fold")
-            if CheckAction in legal_actions:
-                my_action = CheckAction()
-            else:
-                commit_action = FoldAction()
-
-        if continue_cost > 0:
-            pot_odds = continue_cost/(continue_cost + pot)
-            intimidation = 0
-
-            if continue_cost/pot > 0.33:
-                intimidation = -0.3 * (continue_cost / pot)
-            strength += intimidation
-
-            if strength >= pot_odds:
-                my_action = commit_action  # Commit to the pot if strength justifies it
-            else:
-                if strength > 0.4:  # Allow some bluff-catching with moderate strength
-                    my_action = CallAction()
-                else:
-                    my_action = FoldAction()
-
-        else:
-            if strength > 0.6 and random.random() < strength:
-                my_action = commit_action
-            else:
-                my_action = CheckAction()
         
-        return my_action
-
 
 if __name__ == '__main__':
     run_bot(Player(), parse_args())

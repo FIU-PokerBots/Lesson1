@@ -34,14 +34,14 @@ Meet our first bot - the mathematically-minded Player1_ABC! This bot is all abou
 
 It's like having a poker calculator that knows when to hold 'em and when to fold 'em! 
 
-## Pot Odds Bot 🎲
+## All In Bot 🤠
 
-Say hello to the Pot Odds Bot - a strategic thinker that uses the concept of pot odds to make its decisions. This bot is all about balancing risk and reward, ensuring it only commits chips when the math is in its favor. Here's what makes the Pot Odds Bot tick:
-- Preflop Strategy: Identifies strong and premium hands to make aggressive plays when the odds are right.
-- Pot Odds Awareness: Compares the cost of continuing in a hand to the potential reward in the pot, folding when the odds aren't favorable.
-- Exploitative Play: Goes all-in preflop with premium hands if the opponent raises too big, taking advantage of over-aggressive opponents.
+Say hello to the All In Bot - a fearless poker bot that isn't afraid to push all its chips into the pot! This bot is designed to make bold moves when it likes its hand. Here's what makes the All In Bot tick:
 
-It's like having a poker player who always knows when the odds are in their favor!
+- Preflop Aggression: Automatically goes all-in preflop with pairs or Ace-high combinations.
+- Simplified Strategy: Focuses on maximizing aggression by capitalizing on players that are willing to gamble.
+
+It's like having a poker player who knows when to go big or go home!
 
 ## OpenAI Bot 🧠
 
